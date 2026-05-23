@@ -1,0 +1,104 @@
+{
+  "target_mapping": {
+    "Graduate": "Graduate",
+    "Dropout": "Not_Graduate",
+    "Enrolled": "Not_Graduate"
+  },
+  "validation": {
+    "balanced_accuracy": 0.8533386327503975,
+    "macro_recall": 0.8533386327503975,
+    "macro_f1": 0.8531653960888299,
+    "not_graduate_recall": 0.8243243243243243,
+    "not_graduate_f1": 0.8491879350348028,
+    "graduate_recall": 0.8823529411764706,
+    "roc_auc": 0.9183074477192124,
+    "classification_report": {
+      "Graduate": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8823529411764706,
+        "f1-score": 0.8571428571428571,
+        "support": 221.0
+      },
+      "Not_Graduate": {
+        "precision": 0.8755980861244019,
+        "recall": 0.8243243243243243,
+        "f1-score": 0.8491879350348028,
+        "support": 222.0
+      },
+      "accuracy": 0.8532731376975169,
+      "macro avg": {
+        "precision": 0.8544657097288677,
+        "recall": 0.8533386327503975,
+        "f1-score": 0.8531653960888299,
+        "support": 443.0
+      },
+      "weighted avg": {
+        "precision": 0.8545134126101217,
+        "recall": 0.8532731376975169,
+        "f1-score": 0.8531564176214392,
+        "support": 443.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        195,
+        26
+      ],
+      [
+        39,
+        183
+      ]
+    ],
+    "split": "validation",
+    "best_iteration": 70
+  },
+  "test": {
+    "balanced_accuracy": 0.8668725286372345,
+    "macro_recall": 0.8668725286372345,
+    "macro_f1": 0.8667492569424264,
+    "not_graduate_recall": 0.8423423423423423,
+    "not_graduate_f1": 0.8637413394919169,
+    "graduate_recall": 0.8914027149321267,
+    "roc_auc": 0.9408911173617056,
+    "classification_report": {
+      "Graduate": {
+        "precision": 0.8491379310344828,
+        "recall": 0.8914027149321267,
+        "f1-score": 0.869757174392936,
+        "support": 221.0
+      },
+      "Not_Graduate": {
+        "precision": 0.8862559241706162,
+        "recall": 0.8423423423423423,
+        "f1-score": 0.8637413394919169,
+        "support": 222.0
+      },
+      "accuracy": 0.8668171557562077,
+      "macro avg": {
+        "precision": 0.8676969276025495,
+        "recall": 0.8668725286372345,
+        "f1-score": 0.8667492569424264,
+        "support": 443.0
+      },
+      "weighted avg": {
+        "precision": 0.8677388214999943,
+        "recall": 0.8668171557562077,
+        "f1-score": 0.8667424670610483,
+        "support": 443.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        197,
+        24
+      ],
+      [
+        35,
+        187
+      ]
+    ],
+    "split": "test",
+    "best_iteration": 70
+  },
+  "note": "Binary: Graduate vs (Enrolled + Dropout). Primary retention metric: not_graduate_recall."
+}
